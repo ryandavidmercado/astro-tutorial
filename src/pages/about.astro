@@ -14,13 +14,17 @@ const identity = {
 const skills = ["HTML", "CSS", "JavaScript", "Go", "React", "Electron"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 1;
 
-const goalText =
+let goalText =
 	goal == 1
 		? "My goal is to finish in 1 day."
 		: `My goal is to finish in ${goal} days.`;
+
+if (finished) {
+	goalText = goalText.replace("is", "was");
+}
 
 const skillColor = "navy";
 const fontWeight = "bold";
