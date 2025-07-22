@@ -1,0 +1,31 @@
+<div class="hamburger">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+</div>
+
+<style>
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #ff9776;
+  }
+
+  @media screen and (min-width: 636px) {
+    .hamburger {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  import "../scripts/hamburger.js";
+</script>
